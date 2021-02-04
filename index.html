@@ -1,12 +1,8 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Two-Bytes Bootstrap Website Template| Home :: w3layouts</title>
+<title>My website</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <!--web-fonts-->
@@ -24,10 +20,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
-	</script>
+  </script>
+
 <!-- //end-smoth-scrolling -->
 </head>
 <body> 
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 <!--header start here-->
  <div class="header">
  	  <div class="container">
@@ -70,15 +76,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  	       	      </label>
  	       	      <select name="cars">
 					<option value="select your location"> Select your location</option>
-					<option value="saab">location1</option>
-					<option value="fiat">location2</option>
-					<option value="audi">location3</option>
+					<option value="saab">Mumbai</option>
+					<option value="fiat">Delhi</option>
+					<option value="audi">Hyderabad</option>
 				</select>
- 	       	     </form>                
+ 	       	     </form>
+		
+<button class="button btn1" onclick="openForm()">Registration</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required></br>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="Name" required></br>
+  
+    <label for="psw"><b>Password</b></label> 
+    <input type="text" placeholder="Enter Password" name="pwd" required></br>
+    <input type="submit"  class="button btn1" value="Submit">
+    
+    
+    <input type="submit"  class="button btn1" onclick="closeForm()" value="close">
+  </form>
+</div>
+
+
+			
  	       </div>
  	  </div>
  </div>
  <div class="intro-strip"> </div>
+ 
 <!--about start here-->
  <div class="intro">
  	  <div class="container">
@@ -93,7 +123,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  	 </div>
  </div>
 <!--contant start here-->
+
 <div class="strip"> </div>
+
 <div class="contant">
 	  <div class="container">
 	  	   <div class="contant-main">
@@ -105,13 +137,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  </div>
 </div>
 <!--footer start here-->
+
 <div class="strip"> </div>
 <div class="footer-h">
 	  <div class="container">
 	  	    <div class="footer-main">
 	  	    	<div class="col-md-6 footer-left">
-	  	    	 <p class="data"> <a href="mailto:example@mail.com"> Hello@ twobytes.com.au </a> <span class="d"> </span></p>
-	             <p> 2014 &copy Template by <a href="http://w3layouts.com/"> W3layouts </a></p>
+	  	    	 <p class="data"> <a href="adityaraut1998@gmail.com"> adityaraut1998</a> <span class="d"> </span></p>
+	             <p> <a href="https://github.com/heyitsadi"> MY GITHUB </a></p>
 	  	    	</div>
 	  	    	<div class="col-md-6 footer-right">
 	  	             <ul>
